@@ -3,7 +3,8 @@ unit Calculator.Accumulator;
 interface
 
 uses
-  System.Math, System.SysUtils,
+  System.Math,
+  System.SysUtils,
   Calculator.Intf,
   Service.Patterns.Nullable;
 
