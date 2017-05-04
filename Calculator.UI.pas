@@ -163,10 +163,10 @@ end;
 
 procedure TFCalculator.btnNumberClick(Sender: TObject);
 var
-  Digit: Byte;
+  LDigit: Byte;
 begin
-  Digit := StrToInt((Sender as TButton).Caption);
-  FCalculator.AddDigit(Digit);
+  LDigit := StrToInt((Sender as TButton).Caption);
+  FCalculator.AddDigit(LDigit);
 end;
 
 end.
