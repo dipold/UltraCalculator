@@ -3,7 +3,8 @@ unit Service.Patterns.Nullable;
 interface
 
 uses
-  System.Generics.Defaults, System.Rtti, System.SysUtils;
+  System.Generics.Defaults,
+  System.Rtti, System.SysUtils;
 
 type
   ENullValueException = class(Exception)
