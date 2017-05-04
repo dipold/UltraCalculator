@@ -94,10 +94,11 @@ begin
 end;
 
 procedure TFormCalc.btnNumberClick(Sender: TObject);
-var d: integer;
+var 
+  LDigit: Integer;
 begin
-  d := (Sender as TButton).Text.ToInteger;
-  FCalculator.AddDigit(d);
+  LDigit := (Sender as TButton).Text.ToInteger;
+  FCalculator.AddDigit(LDigit);
 end;
 
 end.
