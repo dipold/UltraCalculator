@@ -4,7 +4,8 @@ interface
 
 uses
   System.Generics.Defaults,
-  System.Rtti, System.SysUtils;
+  System.Rtti, 
+  System.SysUtils;
 
 type
   ENullValueException = class(Exception)
@@ -123,7 +124,7 @@ end;
 
 function TNullable<T>.GetValueOrDefault: T;
 begin
-  if FHasValue then
+  if (FHasValue) then
     Result := FValue
   else
     Result := Default(T);

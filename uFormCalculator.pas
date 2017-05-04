@@ -3,7 +3,8 @@ unit uFormCalculator;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  System.SysUtils, 
+  System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Layouts, uInterfaces;
 
@@ -94,10 +95,11 @@ begin
 end;
 
 procedure TFormCalc.btnNumberClick(Sender: TObject);
-var d: integer;
+var 
+  LDigit: Integer;
 begin
-  d := (Sender as TButton).Text.ToInteger;
-  FCalculator.AddDigit(d);
+  LDigit := (Sender as TButton).Text.ToInteger;
+  FCalculator.AddDigit(LDigit);
 end;
 
 end.
