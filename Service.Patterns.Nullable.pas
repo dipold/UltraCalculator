@@ -124,7 +124,7 @@ end;
 
 function TNullable<T>.GetValueOrDefault: T;
 begin
-  if FHasValue then
+  if (FHasValue) then
     Result := FValue
   else
     Result := Default(T);
