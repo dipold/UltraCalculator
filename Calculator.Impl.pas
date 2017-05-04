@@ -3,7 +3,8 @@
 interface
 
 uses
-  Winapi.Messages, Winapi.Windows,
+  Winapi.Messages,
+  Winapi.Windows,
   System.SysUtils,
   Vcl.AppEvnts,
   Calculator.Intf,
